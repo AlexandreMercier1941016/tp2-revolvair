@@ -1,0 +1,77 @@
+# Dart/Flutter-specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+generated_plugin_registrant.dart
+
+# IntelliJ IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code IDE files
+.vscode/
+
+# macOS-specific
+.DS_Store
+
+# Linux-specific
+*.lock
+
+# Windows-specific
+Thumbs.db
+
+# Web-specific
+.web/
+
+# iOS-specific
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Pods/
+ios/.symlinks/
+ios/build/
+ios/Runner.xcworkspace/
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Android-specific
+android/.gradle/
+android/app/debug.keystore
+android/local.properties
+android/*.iml
+android/captures/
+android/app/build/
+
+# Dart & Flutter
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Build outputs
+/build/
+**/build/
+
+# Gradle
+android/.gradle/
+**/local.properties
+**/.idea/
+**/*.iml
+**/.DS_Store
+
+# Kotlin/Java
+**/build/
+**/out/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# MacOS
+.DS_Store

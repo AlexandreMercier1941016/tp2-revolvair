@@ -1,0 +1,43 @@
+name: revolvair
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  collection: ^1.18.0
+  http: ^1.2.2
+  get_it: ^7.1.4 # Downgrade to match stacked's requirement
+  stacked: ^3.4.3
+  stacked_services: ^1.5.1
+  stacked_shared: ^1.4.1 # Downgrade to a version that is compatible with get_it ^7.1.4
+  faker: ^2.2.0
+  mocktail: ^1.0.4
+  flutter_dotenv: ^5.2.1
+  test: ^1.25.7
+  url_launcher: ^6.0.20
+  easy_localization: ^3.0.7
+  flutter_map: ^5.0.0
+  latlong2: ^0.9.1
+  geolocator: ^13.0.2
+  baseflow_plugin_template: ^2.2.0
+  flutter_secure_storage: ^9.2.2
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  stacked_generator: ^1.6.1
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+  assets:
+    - ./.env
+    - ./assets/translations/

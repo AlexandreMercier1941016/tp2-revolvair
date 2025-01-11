@@ -1,0 +1,43 @@
+name: CI
+on:
+  push:
+    tags:
+      - "remise-*" 
+
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v3
+
+      # Set up JDK 11
+      - uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      # Set up Flutter
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: "stable"
+
+      # Fetch project dependencies
+      - run: flutter pub get
+        working-directory: ./revolair 
+
+      # Run tests from the project root
+      - run: flutter test
+        working-directory: ./revolair
+      
+      # Build APK from the project root
+      - run: flutter build apk --target lib/presentation/main.dart 
+        working-directory: ./revolair
+
+      # Release APK
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: revolair/build/app/outputs/flutter-apk/app-release.apk

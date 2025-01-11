@@ -1,0 +1,9 @@
+# Utiliser LF pour tous les fichiers texte
+* text=auto
+
+# Fichiers spécifiques
+*.java text eol=lf
+*.swift text eol=lf
+*.cc text eol=lf
+*.h text eol=lf
+*.cmake text eol=lf

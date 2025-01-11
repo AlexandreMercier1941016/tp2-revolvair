@@ -1,0 +1,44 @@
+{
+    "login": {
+      "user_does_not_exist": "Impossible de trouver votre compte.",
+      "bad_password": "Mot de passe incorrect. Réessayez ou cliquez sur 'Mot de passe oublié' pour le réinitialiser."
+    },
+    "app": {
+      "error": "L'action demandée a provoquée une erreur. Communiquez avec les développeurs si l'erreur persiste."
+    },
+    "air_quality": {
+        "title": "Échelles de qualité de l'air",
+        "tabs": {
+            "revolvair": "Revolair.org",
+            "aqhi_canada": "AQHI-Canada",
+            "iqa_epa_us" : "IQA EPA US"
+        }
+    },
+    "errors":{
+      "httpErrorsTitle":"Une erreur HTTP est survenue.",
+      "networkErrorTitle":"Une erreur réseau est survenue.",
+      "repositoryErrorTitle":"Une erreur est survenue lors de la récupération des données.",
+      "useCaseErrorTitle":"Une erreur est survenue lors de l'exécution de l'action demandée.",
+      "baseErrorTitle":"Une erreur est survenue.",
+      "dialogErrorTitle":"Erreur lors de la redirection vers la source",
+      "dialogErrorMessage": "Veuillez contacter le support ou réessayer plus tard",
+      "dialogErrorButton":"Fermer",
+      "tryAgainMessage": "Veuillez réessayer plus tard."
+
+    },
+    "air_quality_detail": {
+      "title":"Niveau de pollution",
+        "data":{
+            "type":"PM2.5 ug/m3",
+            "range": "à",
+            "effects": "Effets sur la santé",
+            "warning": "Mise en garde (PM 2.5)",
+            "source" : "Source"
+        }
+    },
+    "home": {
+        "title": "Revolvair"
+    }
+
+
+  }
